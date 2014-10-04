@@ -1,0 +1,47 @@
+/*超小屏幕 手机 (<768px) 	小屏幕 平板 (≥768px) 	中等屏幕 桌面显示器 (≥992px) 	大屏幕 大桌面显示器 (≥1200px)*/
+
+@media (max-width:768px)
+{
+#listTuan  .list-group a{
+	height: 125px;
+ }
+	
+#listTuan img
+	{
+	width: 160px;
+	}
+	#listTuan  .list-group a{
+
+	padding-left: 180px;
+	}
+	#listTuan .des {
+		height:60px;
+	}
+	#listTuan .btmbar
+{
+	margin-top: 5px;
+
+}
+#tuandetailImgprice .ordernums{
+padding-left:0px;		
+}
+
+	
+}
+
+@media (min-width:768px)
+{
+#listTuan .btmbar .oprice
+{
+	margin-left: 100px;
+}
+}
+
+@media (min-width:992px)
+{
+}
+
+@media (min-width:1200px)
+{
+}
+

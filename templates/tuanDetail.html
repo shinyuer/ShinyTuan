@@ -1,0 +1,36 @@
+<div id="wrapmain" class="panel panel-default">
+  <header class="panel-heading">
+    <div class="container">
+    <div class="row text-center"> <a class="btn btn-danger pull-left" href="#"> <span class="glyphicon glyphicon-arrow-left"></span></a>
+      <h1 class="header_title">{{title}}</h1>
+    </div>
+  </header>
+  <section class="panel-body" id="citySelect">
+    <div class="container">
+      <div class="row" id="tuandetailTitle">
+       <a href="{{tuanInfo.loc}}" target="_blank" >  <h1>{{tuanInfo.title}}<br />
+          <small>{{tuanInfo.tuandec}}</small></h1></a>
+      </div>
+      <div class="row" id="tuandetailImgprice">
+        <div class="col-sm-7 col-xs-12 " >  <a href="{{tuanInfo.loc}}" target="_blank" > <img src="{{tuanInfo.image}}" style="width:100%" /></a>  </div>
+        <div class="col-sm-5 col-xs-12 " >
+        <div class="row" >
+         <h2 class="price col-sm-12 col-xs-4"><span class="dt">团购价：</span><span class="dd">¥{{tuanInfo.price}}</span></h2> 
+         <h2 class="oprice col-sm-12 col-xs-4"><span class="dt">参考价：</span><span class="dd">¥{{tuanInfo.value}}</span></h2>          
+         <h2 class="ordernums col-sm-12 col-xs-4">已有<b>{{tuanInfo.bought}}</b>人购买</h2>
+          </div>
+         <hr/>
+         <a href="{{tuanInfo.loc}}" target="_blank" ><img src="images/goBuy.png" width="126" height="40" />
+         </a>  
+        
+                
+         </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </footer>
+</div>

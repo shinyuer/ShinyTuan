@@ -1,0 +1,41 @@
+<div id="wrapmain" class="panel panel-default">
+  <header class="panel-heading">
+    <div class="container">
+    <div class="row text-center"> <a class="btn btn-danger pull-left" href="#"> <span class="glyphicon glyphicon-arrow-left"></span></a>
+      <h1 class="header_title">{{title}}</h1>
+    </div>
+  </header>
+  <section class="panel-body" id="citySelect">
+    <div class="container">
+      <div class="row">
+        <h2>热门城市：</h2>
+        <ul class="city_hot">
+          <li ng-repeat="city in hotcities"><a href="#" ng-click="changetuancity(city.name,'')">{{city.name}}</a></li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default"  ng-repeat="citys1 in citylist">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#citySelect{{$index}}" aria-expanded="true" aria-controls="citySelect{{$index}}">{{citys1.Zimu}}</a> </h4>
+            </div>
+            <div id="citySelect{{$index}}" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <ul class="city_hot">
+                  <li ng-repeat="city2 in citys1.citys"><a href="#" ng-click="changetuancity(city2.name,city2.pinyin)">{{city2.name}}</a></li>
+                  <div class="clearfix"></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </footer>
+</div>

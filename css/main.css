@@ -1,0 +1,221 @@
+/* hack bootstrape */
+
+.panel{
+	margin-bottom:0;
+}
+.panel-body {
+	padding: 10px;
+	margin-bottom: 35px;
+}
+.panel-footer{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+.form-group {
+    margin-bottom: 0px;
+}
+
+
+h1, .h1 {
+	font-size: 1.3em;
+}
+/*  全局css */
+html,body{
+	font-size: 14px;
+	font:  Arial,Verdana,"宋体";
+}
+
+#wrapmain{
+
+}
+
+header .header_title{
+	line-height: 34px;
+	margin: 0px;
+	padding: 0px;
+}
+.btn_headerSearchA
+{
+
+	padding-left: 5px;
+	text-align: left;
+	padding-right: 20px;
+	overflow: hidden;
+	position: relative;
+	height: 34px;
+	margin-right: 5px;
+}
+.btn_headerSearchA > span
+{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+	
+header a[href='#/citySelect']{
+	margin-left: 4px;	
+}
+
+#listTuan
+{
+	margin-top:10px;
+}
+		
+#listTuan  .list-group a{
+	width: 100%;
+	padding-left: 220px;
+	position: relative;
+	height: 150px;
+	overflow:hidden;
+ }
+
+
+	#listTuan img
+	{
+	width: 200px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: inline-block;
+	float: left;
+	}
+ 
+ 
+#listTuan dl
+{
+	
+}
+
+#listTuan dt
+{
+	height: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	
+}
+
+#listTuan .des
+{
+	height: 80px;
+	overflow: hidden;	
+}
+#listTuan .btmbar
+{
+	margin-top: 10px;
+	position: relative;
+}
+#listTuan .btmbar .price
+{
+	color: #CC0000;
+	margin-right: 10px;
+	line-height: 20px;
+}
+#listTuan .btmbar .oprice
+{
+	color: #999999;
+	text-decoration: line-through;
+	font-size: 0.8em;
+	line-height: 20px;
+}
+#listTuan .btmbar .ordernums
+{
+	display: inline-block;
+	float: right;
+	font-size: 0.8em;
+	color: #999999;
+	line-height: 20px;
+}
+
+#listTuan .list-group a.ajaxloadtuan
+{
+	height: 35px;	
+	padding-left:0;
+	text-align:center;
+}
+
+
+
+
+/*城市选择  ---begin*/
+.city_hot{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.city_hot li
+{
+	float: left;
+	line-height: 1.5em;
+	height: 20px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	text-align: center;
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	}
+.city_hot li:first-child{
+	border:none;
+}
+/*城市选择  ---End*/
+
+
+/**/
+
+#tuanSearch a{
+	margin: 5px;
+}
+/*tuanDetail begin*/
+
+#tuandetailTitle
+{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+#tuandetailImgprice .dt
+{
+	font-size: 0.9em;
+	color: #666666;
+	width: 60px;
+	display: inline-block;
+	text-align: right;
+}
+#tuandetailImgprice h2
+{
+	line-height: 28px;
+}
+#tuandetailImgprice .price .dd{
+	font-size: 18px;
+	color: #FF0000;
+}
+#tuandetailImgprice .oprice .dd{
+	text-decoration: line-through;
+	font-size: 0.9em;
+}
+#tuandetailImgprice .ordernums{
+	font-size: 0.9em;
+	color: #666666;
+	display: inline-block;
+	padding-left:20px;
+}
+
+
+#tuandetailImgprice .ordernums b{
+	font-size: 1em;
+	color: #0066CC;
+}
+#tuandetailImgprice hr{
+	line-height: 10px;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+

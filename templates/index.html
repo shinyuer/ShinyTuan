@@ -1,0 +1,59 @@
+<div id="wrapmain" class="panel panel-default">
+  <header class="panel-heading">
+    <div class="container">
+      <div class="row  text-center">
+        <h1 class="header_title pull-left">{{indexinit.title}}</h1>
+        <a class="header_title"  href="#/citySelect"> {{indexinit.city}} <span class="caret"></span></a> <a class="btn btn-warning  pull-right"  href="#/tuanSite"> {{indexinit.siteName}} <span class="glyphicon glyphicon-chevron-down"></span></a> <a class="btn btn-success pull-right btn_headerSearchA"  href="#/tuanSearch"> {{indexinit.searchword}}<span class="glyphicon glyphicon-search"></span></a> </div>
+    </div>
+  </header>
+  <section class="panel-body">
+    <div class="container">
+      <div class="row"><!-- Single button -->
+        
+        <div class="btn-group">
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">{{indexinit.dropClass}} <span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li ng-repeat="dropClass in dropClasses"><a ng-click="change_class($index)">{{dropClass.name}}</a></li>
+          </ul>
+        </div>
+        <!-- /btn-group -->
+        
+ <!--       <div class="btn-group">
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">全城 <span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li ng-repeat="dropCityLoc in dropCityLocs"><a>{{dropCityLoc.name}}</a></li>
+          </ul>
+        </div>-->
+        <!-- /btn-group -->
+        <div class="btn-group">
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">{{indexinit.orderbyName}} <span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li ng-repeat="dropOrder in dropOrders"><a ng-click="change_order($index)">{{dropOrder.name}}</a></li>
+          </ul>
+        </div>
+        <!-- /btn-group --> 
+        
+      </div>
+      <div class="row" id="listTuan">
+        <div class="list-group"> <a href="#tuanDetail{{tuan.ID}}" class="list-group-item" ng-repeat="tuan in tuanInfors"> <img ng-src="{{tuan.image}}" />
+          <dl>
+            <dt>{{tuan.website}}</dt>
+            <dd class="des">{{tuan.title}}</dd>
+            <dd class="btmbar"> <span class="price">¥{{tuan.price}}</span> <span class="oprice">原价：¥{{tuan.value}}</span> <span class="ordernums"><b>{{tuan.bought}}</b>人已购买</span> </dd>
+          </dl>
+          <div class="clearfix"></div>
+          </a> 
+          <a href="#" class="list-group-item ajaxloadtuan" ng-show="ajaxloading"> 正在加载中...请稍等 </a> </div>
+      </div>
+      <div class="row" >
+      <a class="btn btn-default pull-left" id="btn_showmore" ng_show="pagetuanSize==10" ng-click="showpagetuanlist()">查看更多</a> 
+      <a class="btn btn-default pull-right" dirgotop>返回顶部</a> 
+      </div>
+    </div>
+  </section>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row text-center"> 关于阳光团 | 联系我 </div>
+    </div>
+  </footer>
+</div>

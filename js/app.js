@@ -133,7 +133,7 @@ myApp.config(function($routeProvider){
 	$scope.tuanInfors=init_tuanlist.tuanlist;
 	$scope.pagetuanSize=10;	
 	$scope.dropOrders=[{name:"最新发布",value:"datetime"},{name:"人气最高",value:"bought"},{name:"最低价格",value:"pricelow"},{name:"最高价格",value:"pricehigh"}];
-	$scope.dropCityLocs=[];//{name:"玉山"},{name:"花桥"}
+	$scope.dropCityLocs=[];
 	$scope.dropClasses=[{name:"全部分类"},{name:"购物"},{name:"电影"}];	
 	var gettuanlist=function(){	
 	  $scope.ajaxloading=true;	
